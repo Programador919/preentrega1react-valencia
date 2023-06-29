@@ -1,0 +1,124 @@
+.navegador {
+    background-color: #8a800e;
+    height: 70px;
+    padding: 10px;
+    gap: 2px;
+  }
+  @media screen and (max-width: 820px) {
+    .navegador {
+      padding-top: 10px;
+      padding-left: 0px;
+      gap: 20px;
+    }
+  }
+  .navegador ul li {
+    list-style: none;
+  }
+  .navegador ul li img {
+    height: 45px;
+  }
+  .navegador ul li img:hover {
+    transform: scale(130%);
+  }
+  @media screen and (max-width: 820px) {
+    .navegador ul li img {
+      height: 38px;
+    }
+    .navegador ul li img:hover {
+      transform: scale(110%);
+    }
+  }
+  .navegador .inicio {
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr repeat(5, 2fr) 4fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "hamburg logo . akt honda zuzuki yamaha contacto . cartwidget";
+  }
+  @media screen and (max-width: 820px) {
+    .navegador .inicio {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-left: 5px;
+    }
+  }
+  .navegador .inicio .entrada:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .navegador .inicio .entrada:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .navegador .inicio .entrada:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  .navegador .inicio .entrada:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  .navegador .inicio .hamburg {
+    grid-area: hamburg;
+  }
+  .navegador .inicio .logo1 {
+    grid-area: logo;
+  }
+  .navegador .inicio .logo1 img {
+    padding: 5px;
+  }
+  .navegador .inicio .akt {
+    grid-area: akt;
+  }
+  @media screen and (max-width: 820px) {
+    .navegador .inicio .akt {
+      display: none;
+    }
+  }
+  .navegador .inicio .honda {
+    grid-area: honda;
+  }
+  @media screen and (max-width: 820px) {
+    .navegador .inicio .honda {
+      display: none;
+    }
+  }
+  .navegador .inicio .zuzuki {
+    grid-area: zuzuki;
+  }
+  @media screen and (max-width: 820px) {
+    .navegador .inicio .zuzuki {
+      display: none;
+    }
+  }
+  .navegador .inicio .yamaha {
+    grid-area: yamaha;
+  }
+  @media screen and (max-width: 820px) {
+    .navegador .inicio .yamaha {
+      display: none;
+    }
+  }
+  .navegador .inicio .contacto {
+    grid-area: contacto;
+  }
+  @media screen and (max-width: 820px) {
+    .navegador .inicio .contacto {
+      display: none;
+    }
+  }
+
+  .navegador .inicio .cartwidget {
+    grid-area: cartwidget;
+    display: flex;
+    flex-direction: row;
+  }
+  .navegador .inicio .numcarrit {
+    color: #202323;
+  }
+  .navegador .inicio .drabar {
+    display: none;
+  }
+  @media screen and (max-width: 820px) {
+    .navegador .inicio .drabar {
+      display: flex;
+      padding-left: 5px;
+    }
+  }
+  
